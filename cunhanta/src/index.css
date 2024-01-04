@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&family=Noto+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
 
-body {
-  margin: 0; 
+*{
+  margin: 0;
   padding: 0;
-  width: 100%; 
-  min-width: 320px;
-  max-width: 100%; 
+  box-sizing: border-box;
+  /* border: 1px solid red; */
 }
+
+body {
+  background: #FDFDFD;
+}
+
+
+

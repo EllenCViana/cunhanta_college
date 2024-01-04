@@ -1,3 +1,38 @@
 .App {
-  background-color: #fdfdfd;
+  height: 100vh;
+}
+
+footer {
+  height: 454px;
+  background-color: #2A3437;
+}
+
+footer p {
+  width: 277px;
+  height: 25px;
+  color: #FFF;
+  font-family: 'Mulish';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  }
+
+footer div {
+  padding-top: 55px;
+  display: grid;
+  justify-items: center;
+  
+  grid-template-columns: repeat(3, 1fr);
+  column-gap:199px ;
+  row-gap: 55px;
+}
+
+footer img {
+  width: 132px;
+  height: 50px;
+  flex-shrink: 0;
+  margin-top: 200px;
+  margin-left: 41px;
+  
 }

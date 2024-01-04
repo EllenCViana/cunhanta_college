@@ -1,11 +1,12 @@
 import './App.css';
-import Header from "./../src/components/Header"; 
+import Header from "./../src/components/Header";
 
 function App() {
 
   return (
     <div className="App">
       <Header />
+      
       <main >
         <div>
           <p>Continuar</p>
@@ -17,10 +18,10 @@ function App() {
           <p>Shorts</p>
         </div>
         <div>
-          <p>Informática básica</p>
+          <p>Criatividade e Inovação</p>
         </div>
         <div>
-          <p>Criatividade e Inovação</p>
+          <p>Informática básica</p>
         </div>
         <div>
           <p>Empreendedorismo</p>
@@ -35,13 +36,14 @@ function App() {
         </div>
       </main>
       <footer>
-        <p>Quem Somos</p>
-        <p>Ajuda e Suporte</p>
-        <p>Fale Conosco</p>
-        <p>Política de Privacidade</p>
-        <p>Declaração de Acessibilidade</p>  
-        <div><div><img src="/logo-white.png" alt="logo" /></div>
-</div>
+        <div>
+          <p>Quem Somos</p>
+          <p>Ajuda e Suporte</p>
+          <p>Fale Conosco</p>
+          <p>Política de Privacidade</p>
+          <p>Declaração de Acessibilidade</p>
+        </div>
+        <img src="/logo-white.png" alt="logo" />
       </footer>
     </div>
   );
