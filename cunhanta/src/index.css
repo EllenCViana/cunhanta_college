@@ -11,5 +11,11 @@ body {
   background: #FDFDFD;
 }
 
+button:focus {
+  outline: none;
+}
+
+
+
 
 

@@ -24,7 +24,7 @@
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
-    gap: 14px;
+    gap: 8px;
 }
 
 .container_continuar .carousel::-webkit-scrollbar {
@@ -120,30 +120,34 @@
     line-height: normal;
 }
 
-
-
 .container_continuar .buttons {
     position: absolute;
     top: 150px;
     border: none;
 }
 
+.container_continuar .buttons button:hover {
+    opacity: 40%;
+}
+
 .container_continuar .buttons button {
     background-color: transparent;
     border: none;
     cursor: grab;
-    opacity: 0.3;
+    opacity: 30%;
+    outline: 'none';
 }
 
 .container_continuar .buttons button:active {
     cursor: grabbing;
 }
 
-.container_continuar .buttons button:first-child img {
+.container_continuar .buttons button:first-child {
     margin-left: 9px;
+    visibility: visible;
 }
 
-.container_continuar .buttons button:last-child img {
+.container_continuar .buttons button:last-child  {
     margin-left: 1330px;
 }
 

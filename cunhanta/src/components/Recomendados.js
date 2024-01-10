@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import "./Recomendados.css";
 
 import curso_html_css from "./../img/curso-html-css.jpg";
@@ -100,17 +100,36 @@ const cursos = [
 const Recomendados = () => {
 
     const carousel = useRef(null);
+    const [showLeftButton, setShowLeftButton] = useState(false);
+    const [showRightButton, setShowRightButton] = useState(true);
 
     const handleLeftClick = (e) => {
         e.preventDefault();
         carousel.current.scrollLeft -= carousel.current.offsetWidth;
-      };
-    
-      const handleRightClick = (e) => {
+    };
+
+    const handleRightClick = (e) => {
         e.preventDefault();
-    
         carousel.current.scrollLeft += carousel.current.offsetWidth;
-      };
+    };
+
+    const checkCarouselPosition = () => {
+        const { scrollLeft, offsetWidth, scrollWidth } = carousel.current;
+        setShowLeftButton(scrollLeft > 0);
+        setShowRightButton(scrollLeft + offsetWidth < scrollWidth - 1 );
+    };
+
+    useEffect(() => {
+        const handleScroll = () => {
+            checkCarouselPosition();
+        };
+
+        carousel.current.addEventListener('scroll', handleScroll);
+
+        return () => {
+            carousel.current.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return (
 
         <div className="container_recomendados">
@@ -137,12 +156,16 @@ const Recomendados = () => {
                         </div>
                     ))
                 }
-                <div className="buttons">
-                    <button onClick={handleLeftClick}><img src="/left-arrow.svg" alt="Scroll Left" /></button>
-                    <button onClick={handleRightClick}><img src="/right-arrow.svg" alt="Scroll Right" /></button>
-                </div>
-            </div>
 
+            </div>
+            <div className="buttons">
+                <button onClick={handleLeftClick}  style={{ visibility: showLeftButton ? 'visible' : 'hidden' }}>
+                    <img src="/left-arrow.svg" alt="Scroll Left" />
+                </button>
+                <button onClick={handleRightClick}  style={{ visibility: showRightButton ? 'visible' : 'hidden' }}>
+                    <img src="/right-arrow.svg" alt="Scroll Right" />
+                </button>
+        </div>
         </div>
     );
 };

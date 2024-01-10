@@ -15,6 +15,7 @@
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+    margin-bottom: 17px;
 }
 
 .container_shorts .carousel {
@@ -22,7 +23,7 @@
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
-    gap: 14px;
+    gap: 8px;
 }
 
 .container_shorts .carousel::-webkit-scrollbar {
@@ -43,26 +44,31 @@
 
 .container_shorts .buttons {
     position: absolute;
-    top: 150px;
+    top: 201px;
     border: none;
+}
+
+.container_shorts .buttons button:hover {
+    opacity: 40%;
 }
 
 .container_shorts .buttons button {
     background-color: transparent;
     border: none;
     cursor: grab;
-    opacity: 0.3;
+    opacity: 20%;
+    outline: 'none';
 }
 
 .container_shorts .buttons button:active {
     cursor: grabbing;
 }
 
-.container_shorts .buttons button:first-child img {
+.container_shorts .buttons button:first-child {
     margin-left: 9px;
 }
 
-.container_shorts .buttons button:last-child img {
+.container_shorts .buttons button:last-child {
     margin-left: 1330px;
 }
 

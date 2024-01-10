@@ -24,7 +24,7 @@
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
-    gap: 14px;
+    gap: 8px;
 }
 
 .container_recomendados .carousel::-webkit-scrollbar {
@@ -125,22 +125,27 @@
     border: none;
 }
 
+.container_recomendados .buttons button:hover {
+    opacity: 40%;
+}
+
 .container_recomendados .buttons button {
     background-color: transparent;
     border: none;
     cursor: grab;
-    opacity: 0.3;
+    opacity: 30%;
+    outline: 'none';
 }
 
 .container_recomendados .buttons button:active {
     cursor: grabbing;
 }
 
-.container_recomendados .buttons button:first-child img {
+.container_recomendados .buttons button:first-child {
     margin-left: 9px;
 }
 
-.container_recomendados .buttons button:last-child img {
+.container_recomendados .buttons button:last-child {
     margin-left: 1330px;
 }
 
