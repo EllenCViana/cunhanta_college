@@ -1,22 +1,18 @@
 import './App.css';
 import Header from "./../src/components/Header";
+import Continuar from "./../src/components/Continuar";
+import Recomendados from "./../src/components/Recomendados";
+import Shorts from "./../src/components/Shorts";
 
 function App() {
 
   return (
     <div className="App">
-      <Header />
-      
+      <Header />     
       <main >
-        <div>
-          <p>Continuar</p>
-        </div>
-        <div>
-          <p>Recomendados</p>
-        </div>
-        <div>
-          <p>Shorts</p>
-        </div>
+        <Continuar />
+        <Recomendados />
+        <Shorts />
         <div>
           <p>Criatividade e Inovação</p>
         </div>
@@ -43,7 +39,7 @@ function App() {
           <p>Política de Privacidade</p>
           <p>Declaração de Acessibilidade</p>
         </div>
-        <img src="/logo-white.png" alt="logo" />
+        <img src="/logo-white.svg" alt="logo" />
       </footer>
     </div>
   );

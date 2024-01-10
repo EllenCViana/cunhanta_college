@@ -1,15 +1,15 @@
 import React from 'react';
-import imagem_inicial from "./../img/imagem-inicial.png";
-import './Header.css';
+import imagem_inicial from "./../img/imagem-inicial.jpg";
+import "./Header.css";
 
 const Header = () => {
     return (
         <header>
             <section className="inicio">
-                <img className="logo" src="/logo.png" alt="logo" />
-                <div className='procurar'>
+                <img className="logo" src="/logo.svg" alt="logo" />
+                <div className="procurar">
                     <input type="text" placeholder="O que você procura?" />
-                    <button type="button" className='lupa'><img src="/loupe.png" alt="lupa" /></button>
+                    <button type="button" className='lupa'><img src="/loupe.svg" alt="lupa" /></button>
                 </div>
 
                     <button type="button" className="login">Entrar</button>

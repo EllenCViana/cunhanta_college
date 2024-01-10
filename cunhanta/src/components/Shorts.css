@@ -1,0 +1,68 @@
+.container_shorts {
+    position: relative;
+    height: 453.33px;
+    flex-shrink: 0;
+    background-color: #FFF;
+    margin-left: 47px;
+    padding: 19px 0 11px 22px;
+    margin-bottom: 7px;
+}
+
+.container_shorts h1 {
+    color: #000;
+    font-family: 'Mulish';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.container_shorts .carousel {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 14px;
+}
+
+.container_shorts .carousel::-webkit-scrollbar {
+    display: none;
+} 
+
+.container_shorts .carousel .item .image {
+    width: 210px;
+    height: 373.33px;
+}
+
+.container_shorts .carousel .item .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.container_shorts .buttons {
+    position: absolute;
+    top: 150px;
+    border: none;
+}
+
+.container_shorts .buttons button {
+    background-color: transparent;
+    border: none;
+    cursor: grab;
+    opacity: 0.3;
+}
+
+.container_shorts .buttons button:active {
+    cursor: grabbing;
+}
+
+.container_shorts .buttons button:first-child img {
+    margin-left: 9px;
+}
+
+.container_shorts .buttons button:last-child img {
+    margin-left: 1330px;
+}
+
