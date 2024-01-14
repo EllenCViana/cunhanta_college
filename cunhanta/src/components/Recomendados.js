@@ -97,7 +97,7 @@ const cursos = [
 ];
 
 
-const Recomendados = () => {
+function Recomendados() {
 
     const carousel = useRef(null);
     const [showLeftButton, setShowLeftButton] = useState(false);
@@ -127,7 +127,9 @@ const Recomendados = () => {
         carousel.current.addEventListener('scroll', handleScroll);
 
         return () => {
-            carousel.current.removeEventListener('scroll', handleScroll);
+            if (carousel.current) {
+                carousel.current.removeEventListener('scroll', handleScroll);
+              }
         };
     }, []);
     return (

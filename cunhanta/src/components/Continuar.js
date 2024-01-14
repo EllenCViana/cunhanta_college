@@ -98,7 +98,7 @@ const cursos = [
 
 
 
-const Continuar = () => {
+function Continuar() {
 
     const carousel = useRef(null);
     const [showLeftButton, setShowLeftButton] = useState(false);
@@ -122,14 +122,23 @@ const Continuar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
+
             checkCarouselPosition();
+
+            if (carousel.current) {
+                carousel.current.removeEventListener('scroll', handleScroll);
+              }
         };
 
         carousel.current.addEventListener('scroll', handleScroll);
 
         return () => {
-            carousel.current.removeEventListener('scroll', handleScroll);
+            if (carousel.current) {
+      carousel.current.removeEventListener('scroll', handleScroll);
+    }
         };
+
+        
     }, []);
 
     return (

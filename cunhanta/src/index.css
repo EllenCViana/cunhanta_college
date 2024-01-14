@@ -7,10 +7,6 @@
   /* border: 1px solid red; */
 }
 
-body {
-  background: #FDFDFD;
-}
-
 button:focus {
   outline: none;
 }

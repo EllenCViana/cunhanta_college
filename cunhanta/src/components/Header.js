@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import imagem_inicial from "./../img/imagem-inicial.png";
 import "./Header.css";
 
-const Header = () => {
+function Header() {
     return (
         <header>
             <section className="inicio">
@@ -12,8 +13,8 @@ const Header = () => {
                     <button type="button" className='lupa'><img src="/loupe.svg" alt="lupa" /></button>
                 </div>
 
-                    <button type="button" className="login">Entrar</button>
-                    <button type="button" className="cadastro">Cadastre-se</button>
+                <Link className="login" to="/Login">Entrar</Link>
+                <button type="button" className="cadastro">Cadastre-se</button>
             </section>
 
             <nav>
@@ -23,7 +24,7 @@ const Header = () => {
                     <li>Explorar cursos</li>
                     <li>Quiz</li>
                     <li>Certificados</li>
-                    
+
                     <li>Sobre</li>
                 </ul>
             </nav>
@@ -33,7 +34,7 @@ const Header = () => {
                     <p>Navegue pelas inúmeras opções de cursos disponíveis e dê o pontapé inicial na construção do seu caminho para o futuro. Sua jornada começa agora!</p>
                     <button type="button">Explorar cursos</button>
                 </div>
-                <img className="imageminicial" src={imagem_inicial} alt="imagem inicial"  />
+                <img className="imageminicial" src={imagem_inicial} alt="imagem inicial" />
             </section>
         </header>
     );

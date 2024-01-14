@@ -1,4 +1,4 @@
-.inicio {
+header .inicio {
     display: flex;
     border-bottom: 1px solid #FBFBFB;
     background-color: #FFF;
@@ -7,7 +7,7 @@
     align-items: center;
 }
 
-.logo {
+header .inicio .logo {
     width: 132px;
     height: 50px;
     margin-left: 82px;
@@ -15,16 +15,12 @@
     animation: flipTitle 0.5s;
 }
 
-@keyframes flipTitle {
-    from{
-        transform: rotateX(90deg);
-    }
-    to{
-        transform: rotateX(0deg);
-    }
+header .inicio .procurar {
+    position: relative;
+    margin-right: 120px;
 }
 
-input {
+header .inicio .procurar input {
     width: 667px;
     height: 46px;
     border-radius: 6px;
@@ -40,17 +36,7 @@ input {
     padding-left: 25px;
 }
 
-.procurar {
-    position: relative;
-    margin-right: 120px;
-}
-.lupa img {
-    width: 22px;
-    height: 22px;
-    opacity: 50%;
-}
-
-.lupa {
+header .inicio .procurar .lupa {
     background-color: transparent;
     border: none;
     position: absolute;
@@ -58,7 +44,18 @@ input {
     right: 22px;
 }
 
-.login {
+header .inicio .procurar .lupa img {
+    width: 22px;
+    height: 22px;
+    opacity: 50%;
+}
+
+
+
+header .inicio .login {
+    text-align: center;
+    padding-top: 3px;
+    text-decoration: none;
     width: 115px;
     height: 36px;
     flex-shrink: 0;
@@ -74,7 +71,7 @@ input {
     margin-right: 24px;
 }
 
-.cadastro {
+header .inicio .cadastro {
     width: 118px;
     height: 27.418px;
     flex-shrink: 0;
@@ -89,7 +86,7 @@ input {
     margin-right: 82px;
 }
 
-nav {
+header nav {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,7 +96,7 @@ nav {
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.05);
 }
 
-ul {
+header nav ul {
     display: flex;
     list-style: none;
     gap: 124px;
@@ -111,7 +108,7 @@ ul {
     line-height: normal;
 }
 
-.container {
+header .container {
     padding-left: 81px;
     position: relative;
     background: #ffffff;
@@ -121,7 +118,7 @@ ul {
     padding-top: 97px;
 }
 
-.container h1 {
+header .container h1 {
     width: 761px;
     height: 75px;
     color: #000;
@@ -133,7 +130,7 @@ ul {
     margin-bottom: 41px;
 }
 
-.container p {
+header .container p {
     width: 677px;
     height: 46px;
     color: #000;
@@ -145,7 +142,7 @@ ul {
     margin-bottom: 66px;
 }
 
-.container button {
+header .container button {
     width: 307px;
     height: 65.439px;
     flex-shrink: 0;
@@ -161,12 +158,11 @@ ul {
 }
 
 
-.container img {
+header .container img {
     position: absolute;
     width: 720.73px;
     height: 498px;
     flex-shrink: 0;
     right: 69.56px;
     top: 0; 
-
 }
