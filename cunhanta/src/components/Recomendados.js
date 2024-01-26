@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import "./Recomendados.css";
+
 
 import curso_html_css from "./../img/curso-html-css.jpg";
 import curso_hardware from "./../img/curso-de-hardware.jpg";
@@ -20,7 +20,7 @@ const cursos = [
         'subtitulo': 'Gustavo Guanabara',
         'nivel': "Iniciante",
         'duracao': '9 Horas',
-        'url': curso_html_css
+        'url': curso_hardware
     },
     {
         'id': 2,
@@ -28,7 +28,7 @@ const cursos = [
         'subtitulo': 'Gustavo Guanabara',
         'nivel': "Avançado",
         'duracao': '15 Horas',
-        'url': curso_hardware
+        'url': curso_html_css
     },
     {
         'id': 3,
@@ -134,9 +134,9 @@ function Recomendados() {
     }, []);
     return (
 
-        <div className="container_recomendados">
+        <div className="container_">
 
-            <h1>Recomendados</h1>
+            <h1 className="nome_secao">Recomendados</h1>
 
             <div className="carousel" ref={carousel}>
                 {

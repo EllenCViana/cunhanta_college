@@ -36,6 +36,10 @@ header .inicio .procurar input {
     padding-left: 25px;
 }
 
+header .inicio .procurar input:focus {
+    color: #000000;
+}
+
 header .inicio .procurar .lupa {
     background-color: transparent;
     border: none;
@@ -49,8 +53,6 @@ header .inicio .procurar .lupa img {
     height: 22px;
     opacity: 50%;
 }
-
-
 
 header .inicio .login {
     text-align: center;
@@ -84,6 +86,7 @@ header .inicio .cadastro {
     border: none;
     background-color: #FFF;
     margin-right: 82px;
+    text-decoration: none;
 }
 
 header nav {

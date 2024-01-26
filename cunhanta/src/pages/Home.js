@@ -13,15 +13,10 @@ function Home() {
         <Continuar />
         <Recomendados />
         <Shorts />
-        <div>
-          <p>Criatividade e Inovação</p>
-        </div>
-        <div>
-          <p>Informática básica</p>
-        </div>
-        <div>
-          <p>Empreendedorismo</p>
-        </div>
+        <Recomendados />
+        <Recomendados /> 
+        <Recomendados />
+        <Recomendados />      
 
         <div>
           <h1>Nós acreditamos no seu potencial!</h1>

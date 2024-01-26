@@ -1,29 +1,4 @@
-.login {
-    background-color: #F8F8F8;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.login .div {
-    width: 486px;
-    height: 608px;
-    flex-shrink: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 40px;
-    background-color: #FFF;
-    box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.08);
-    padding: 72px 73px 117px 73px;
-}
-
-.login .div h1 {
+.section .div .titulo-login {
     color: #FE9600;
     font-family: "Mulish";
     font-size: 42px;
@@ -33,7 +8,7 @@
     margin-bottom: 21.54px;
 }
 
-.login .div label {
+.section .div .label {
     height: 21.733px;
     flex-shrink: 0;
     color: #000;
@@ -44,12 +19,19 @@
     line-height: normal;
 }
 
-.login .div .senha {
-    margin-top: 16px;
+.section .div .label {
+    height: 21.733px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Mulish";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
 }
 
-.login .div input {
-    width: 339px;
+.input-login {
+    width: 305px;
     height: 46px;
     flex-shrink: 0;
     border-radius: 6px;
@@ -64,9 +46,15 @@
     line-height: normal;
     padding-left: 19px;
     margin-top: 6.72px;
+    margin-bottom: 16.1px;
+    outline: none;
+}
+.input-login:focus {
+    border-color: #4285F4;
 }
 
-.login .div .esqueceusenha {
+
+.section .div .esqueceusenha {
     color: #4285F4;
     font-family: "Mulish";
     font-size: 14px;
@@ -77,9 +65,9 @@
     margin-top: 5px;
 }
 
-.login .div .entrar {
-    margin-top: 62px;
-    width: 339px;
+.section .div .botao-entrar {
+    margin-top: 40px;
+    width: 305px;
     height: 54px;
     flex-shrink: 0;
     border-radius: 6px;
@@ -91,22 +79,48 @@
     font-weight: 500;
     line-height: normal;
     border: none;
+    margin-bottom: 12px;
 }
 
-.login .div .manterconectado {
+.section .div .botao-entrar:hover {
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.checkbox {
+    display: flex;
+    margin-left: 6px;
+}
+
+.checkbox .checked {
+    width: 15px;
+    height: 15px;
+    margin-top: 2px;
+    margin-right: 3px;
+}
+
+.checkbox .manterconectado {
     color: #4DAF4A;
     font-family: "Mulish";
-    font-size: 10px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
 
-.login .div label .checkbox {
-    width: 14px;
-    height: 14px;
-    flex-shrink: 0;
-    border-radius: 1px;
-    margin: 0;
+.possuirconta {
+    margin-top: 19px;
+    font-family: "Mulish";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.possuirconta p {
+    color: #8D8D8D;
+}
+
+.possuirconta .possuirconta-link {
+    color: #4285F4;
 }
 

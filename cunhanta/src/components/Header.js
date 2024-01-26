@@ -14,7 +14,7 @@ function Header() {
                 </div>
 
                 <Link className="login" to="/Login">Entrar</Link>
-                <button type="button" className="cadastro">Cadastre-se</button>
+                <Link className="cadastro" to="/Cadastro">Cadastre-se</Link>
             </section>
 
             <nav>

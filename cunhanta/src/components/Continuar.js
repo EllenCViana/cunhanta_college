@@ -1,5 +1,4 @@
 import React, { useRef, useEffect, useState } from 'react';
-import "./Continuar.css";
 
 import curso_html_css from "./../img/curso-html-css.jpg";
 import curso_hardware from "./../img/curso-de-hardware.jpg";
@@ -122,30 +121,22 @@ function Continuar() {
 
     useEffect(() => {
         const handleScroll = () => {
-
             checkCarouselPosition();
-
-            if (carousel.current) {
-                carousel.current.removeEventListener('scroll', handleScroll);
-              }
         };
 
         carousel.current.addEventListener('scroll', handleScroll);
 
         return () => {
             if (carousel.current) {
-      carousel.current.removeEventListener('scroll', handleScroll);
-    }
+                carousel.current.removeEventListener('scroll', handleScroll);
+              }
         };
-
-        
     }, []);
-
     return (
 
-        <div className="container_continuar">
+        <div className="container_">
 
-            <h1>Continuar</h1>
+            <h1 className="nome_secao">Continuar</h1>
 
             <div className="carousel" ref={carousel} >
 
